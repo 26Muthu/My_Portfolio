@@ -71,7 +71,11 @@ export default function About() {
               <div className="bg-bg-2 border border-border rounded-lg p-6 flex flex-col gap-5">
                 {/* Avatar placeholder */}
                 <div className="w-full aspect-square bg-bg-3 border border-border-2 rounded-md flex items-center justify-center font-display font-extrabold text-5xl text-text-3 tracking-tight">
-                  GM
+                   <img 
+    src="/img/IMG_20260121_161606.jpg.jpeg" 
+    alt="GM" 
+    className="w-full h-full object-cover rounded-md"
+  />
                 </div>
 
                 <div>
