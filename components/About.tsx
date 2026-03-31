@@ -1,3 +1,13 @@
+"use client";
+import { motion } from "framer-motion";
+import Image from "next/image";
+
+// import img1 from "../public/img/IMG_20260121_161606.jpg.jpeg";
+// import img2 from "../img/IMG_20260121_161606.jpg.jpeg";
+// import img3 from "../img/IMG_20260121_161606.jpg.jpeg";
+// import img4 from "../img/IMG_20260121_161606.jpg.jpeg";
+// import img5 from "../img/IMG_20260121_161606.jpg.jpeg";
+
 const SKILLS = [
   { cat: "Languages", items: ["Java", "C", "JavaScript", "C#"] },
   { cat: "Frontend", items: ["React.js", "HTML", "CSS", "Figma"] },
@@ -7,6 +17,12 @@ const SKILLS = [
   { cat: "Tools", items: ["Git", "Postman", "SSMS", "CI/CD"] },
 ];
 
+
+<img 
+    src="/img/IMG_20260121_161606.jpg.jpeg" 
+    alt="GM" 
+    className="w-full h-full object-cover rounded-md"
+  />
 export default function About() {
   return (
     <section id="about" className="border-t border-border py-32 px-8">
@@ -71,11 +87,42 @@ export default function About() {
               <div className="bg-bg-2 border border-border rounded-lg p-6 flex flex-col gap-5">
                 {/* Avatar placeholder */}
                 <div className="w-full aspect-square bg-bg-3 border border-border-2 rounded-md flex items-center justify-center font-display font-extrabold text-5xl text-text-3 tracking-tight">
-                   <img 
-    src="/img/IMG_20260121_161606.jpg.jpeg" 
-    alt="GM" 
-    className="w-full h-full object-cover rounded-md"
-  />
+                   <motion.div
+        initial={{ scale: 1 }}
+        animate={{ scale: 0, opacity: 0 }}
+        transition={{ duration: 2 }}
+        className="absolute grid grid-cols-2 gap-2"
+      >
+        <Image src="/img/IMG_20260121_161606.jpg.jpeg" alt="" width={500}
+  height={300} className="w-24 h-24 object-cover"/>
+        <Image src="/img/IMG_20260121_161606.jpg.jpeg" alt="" width={300}
+  height={150} className="w-24 h-24 object-cover"/>
+  <Image src="/img/IMG_20260121_161606.jpg.jpeg" alt="" width={150}
+  height={300} className="w-24 h-24 object-cover"/>
+        <Image src="/img/IMG_20260121_161606.jpg.jpeg" alt="" width={300}
+  height={300} className="w-24 h-24 object-cover"/>
+        <Image src="/img/IMG_20260121_161606.jpg.jpeg" alt="" width={300}
+  height={300} className="w-24 h-24 object-cover"/>
+  <Image src="/img/IMG_20260121_161606.jpg.jpeg" alt="" width={300}
+  height={300} className="w-24 h-24 object-cover"/>
+      </motion.div>
+
+      {/* Final Single Image */}
+      <motion.div
+        initial={{ scale: 1 }}
+        animate={{ scale: 1 }}
+        transition={{ delay: 1, duration: 2 }}
+        className="absolute"
+      >
+        <Image
+          src="/img/IMG_20260121_161606.jpg.jpeg"
+          alt="profile"
+          width={300}
+  height={300}
+          className="w-48 h-48 object-cover rounded-md"
+        />
+      </motion.div>
+
                 </div>
 
                 <div>
@@ -124,3 +171,5 @@ export default function About() {
     </section>
   );
 }
+
+

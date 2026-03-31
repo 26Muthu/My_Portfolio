@@ -26,11 +26,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${
-        scrolled
+      className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-300 ${scrolled
           ? "bg-bg/90 backdrop-blur-xl border-b border-border py-3"
           : "py-5"
-      }`}
+        }`}
     >
       <div className="max-w-5xl mx-auto px-8 flex items-center gap-6">
         {/* Logo */}
@@ -48,11 +47,10 @@ export default function Header() {
             <button
               key={id}
               onClick={() => scrollTo(id)}
-              className={`font-mono text-xs px-3 py-2 rounded tracking-widest transition-all duration-200 cursor-none ${
-                active === id
+              className={`font-mono text-xs px-3 py-2 rounded tracking-widest transition-all duration-200 cursor-none ${active === id
                   ? "text-accent"
                   : "text-text-2 hover:text-text hover:bg-bg-3"
-              }`}
+                }`}
             >
               <span className="text-accent opacity-60 mr-1">0{i + 1}.</span>
               {id}
@@ -61,10 +59,11 @@ export default function Header() {
         </nav>
 
         <a
-          href="mailto:gmuthumani2004@gmail.com"
+          href="/Muthumani_Resume.pdf"
           className="hidden md:inline-block font-mono text-[0.72rem] text-accent border border-accent px-4 py-2 rounded tracking-widest hover:bg-accent hover:text-black transition-all duration-200"
+          download
         >
-          hire me
+          Download CV
         </a>
 
         {/* Hamburger */}
@@ -74,14 +73,12 @@ export default function Header() {
           aria-label="menu"
         >
           <span
-            className={`block w-5 h-px bg-text transition-transform duration-200 ${
-              menuOpen ? "translate-y-[7px] rotate-45" : ""
-            }`}
+            className={`block w-5 h-px bg-text transition-transform duration-200 ${menuOpen ? "translate-y-[7px] rotate-45" : ""
+              }`}
           />
           <span
-            className={`block w-5 h-px bg-text transition-transform duration-200 ${
-              menuOpen ? "-translate-y-[7px] -rotate-45" : ""
-            }`}
+            className={`block w-5 h-px bg-text transition-transform duration-200 ${menuOpen ? "-translate-y-[7px] -rotate-45" : ""
+              }`}
           />
         </button>
       </div>

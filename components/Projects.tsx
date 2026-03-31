@@ -82,7 +82,7 @@ export default function Projects() {
               <p className="font-mono text-xs text-text-2 leading-[1.9] flex-1">{p.desc}</p>
               <ul className="flex flex-wrap gap-2 mt-auto">
                 {p.tags.map(t => (
-                  <li key={t} className="font-mono text-[0.62rem] text-text-3 border border-border px-2 py-0.5 rounded tracking-wide">
+                  <li key={t} className="font-mono text-[0.62rem] text-gray-400 border border-border px-2 py-0.5 rounded tracking-wide">
                     {t}
                   </li>
                 ))}
@@ -110,7 +110,7 @@ export default function Projects() {
               <p className="font-mono text-xs text-text-2 leading-[1.8] flex-1">{p.desc}</p>
               <ul className="flex flex-wrap gap-1.5">
                 {p.tags.map(t => (
-                  <li key={t} className="font-mono text-[0.6rem] text-text-3 border border-border px-2 py-0.5 rounded">
+                  <li key={t} className="font-mono text-[0.6rem] text-gray-400 border border-border px-2 py-0.5 rounded">
                     {t}
                   </li>
                 ))}

@@ -108,7 +108,7 @@ export default function Experience() {
             {TABS[active].stack.length > 0 && (
               <div className="flex flex-wrap gap-2">
                 {TABS[active].stack.map(s => (
-                  <span key={s} className="font-mono text-[0.62rem] text-text-3 border border-border px-2.5 py-0.5 rounded tracking-wide">
+                  <span key={s} className="font-mono text-[0.62rem] text-gray-400 border border-border px-2.5 py-0.5 rounded tracking-wide">
                     {s}
                   </span>
                 ))}

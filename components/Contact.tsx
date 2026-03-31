@@ -30,15 +30,25 @@ export default function Contact() {
               I&apos;m actively seeking full-time software engineering roles in Singapore or remotely.
               Whether you have a role, a project, or just want to chat tech — I&apos;d love to hear from you.
             </p>
-            <a
-              href="mailto:gmuthumani2004@gmail.com"
-              className="inline-block font-mono text-sm tracking-widest bg-accent text-black px-8 py-3.5 rounded transition-all duration-200 hover:opacity-85 hover:-translate-y-0.5"
-            >
-              say hello →
-            </a>
+            <div className="flex gap-4 mt-6">
+              <a
+                href="/Muthumani_Resume.pdf"
+                className="inline-block font-mono text-sm tracking-widest bg-accent text-black px-8 py-3.5 rounded transition-all duration-200 hover:opacity-85 hover:-translate-y-0.5"
+                download
+              >
+                Download CV
+              </a>
 
-            <div className="flex items-center gap-3 font-mono text-xs text-text-3 mt-8">
-              <span className="w-2 h-2 bg-accent rounded-full animate-pulse" />
+              <a
+                href="mailto:gmuthumani2004@gmail.com"
+                className="inline-block font-mono text-sm tracking-widest bg-accent text-black px-8 py-3.5 rounded transition-all duration-200 hover:opacity-85 hover:-translate-y-0.5"
+              >
+                say hello →
+              </a>
+            </div>
+
+            <div className="flex items-center gap-3 font-mono text-xs text-gray-400 mt-8">
+              <span className="w-2 h-2 bg-white rounded-full animate-pulse" />
               Available for full-time roles · Singapore-based
             </div>
           </div>
