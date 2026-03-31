@@ -4,7 +4,7 @@
 > Designed to showcase projects, skills, experience, and contact information in a clean, interactive format.
 
 **Live Website:**
-https://my-portfolio-muthumani.vercel.app
+https://muthu-portfolio-navy.vercel.app/
 
 ---
 
